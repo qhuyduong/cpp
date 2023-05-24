@@ -11,8 +11,7 @@ private:
     static int load;
 
 public:
-    static int compute(long long A, long long B)
-    {
+    static int compute(long long A, long long B) {
         load += 1;
         if (A < 0) {
             throw std::invalid_argument("A is negative");
@@ -25,12 +24,13 @@ public:
         int ans = v.at(B);
         return real + A - B * ans;
     }
-    static int getLoad() { return load; }
+    static int getLoad() {
+        return load;
+    }
 };
 int Server::load = 0;
 
-int main()
-{
+int main() {
     int T;
     cin >> T;
     while (T--) {

@@ -20,6 +20,7 @@
         "tuple": "cpp",
         "type_traits": "cpp",
         "iosfwd": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "iostream": "cpp"
     }
 }

@@ -4,8 +4,11 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "enter program name, for example ${workspaceFolder}/a.out",
-            "args": [],
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+            "args": [
+                "<",
+                "${workspaceFolder}/${fileBasenameNoExtension}_input.txt"
+            ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],

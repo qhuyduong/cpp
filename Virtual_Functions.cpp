@@ -72,7 +72,7 @@ int main() {
 
     int n, val;
     cin >> n; // The number of objects that is going to be created.
-    Person *per[n];
+    Person* per[n];
 
     for (int i = 0; i < n; i++) {
 
